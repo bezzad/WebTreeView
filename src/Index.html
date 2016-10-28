@@ -1,0 +1,101 @@
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Test Easy Tree Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="easyTree.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="easyTree.min.js"></script>
+</head>
+
+<body style="background-color: #fff;">
+    <div class="col-md-3">
+        <h3 class="text-success">Customized Easy Tree</h3>
+        <div class="easy-tree">
+            <ul>
+                <li>
+                    <a href="/" title="Test title"><strong>Test Tree Node 1</strong></a>
+                </li>
+                <li>
+                    <a href="/" title="Test title"><strong>Test Tree Node 2</strong></a>
+                </li>
+                <li class="parent_li">
+                    <a href="/" title="Test title"><strong>Test Tree Node 3</strong></a>
+                    <ul>
+                        <li><a href="/" title="Test title">Example 1</a>
+                        </li>
+                        <li class="parent_li li_selected">
+                            <a href="/" title="Test title">Example 2</a>
+                            <ul>
+                                <li style="display: list-item;">
+                                    <a href="/" title="Test title">Example 1</a>
+                                </li>
+                                <li style="display: list-item;">
+                                    <a href="/" title="Test title">Example 2</a>
+                                </li>
+                                <li style="display: list-item;">
+                                    <a href="/" title="Test title">Example 3</a>
+                                </li>
+                                <li style="display: list-item;">
+                                    <a href="/" title="Test title">Example 4</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/" title="Test title">Example 3</a>
+                        </li>
+                        <li>
+                            <a href="/" title="Test title">Example 4</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="parent_li">
+
+                    <a href="/" title="Test title">Example 0</a>
+                    <ul>
+                        <li>
+                            <a href="/" title="Test title">Example 1</a>
+                        </li>
+                        <li>
+                            <a href="/" title="Test title">Example 2</a>
+                        </li>
+                        <li>
+                            <a href="/" title="Test title">Example 3</a>
+                        </li>
+                        <li class="parent_li">
+
+                            <a href="/" title="Test title">Example 4</a>
+                            <ul>
+                                <li>
+                                    <a href="/" title="Test title">Example 1</a>
+                                </li>
+                                <li>
+                                    <a href="/" title="Test title">Example 2</a>
+                                </li>
+                                <li>
+                                    <a href="/" title="Test title">Example 3</a>
+                                </li>
+                                <li>
+                                    <a href="/" title="Test title">Example 4</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        (function ($) {
+                function init() {
+                    $('.easy-tree').EasyTree();
+                }
+    
+                window.onload = init();
+            })(jQuery)
+    </script>
+</body>
+</html>
